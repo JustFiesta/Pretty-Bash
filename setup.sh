@@ -152,17 +152,6 @@ if [ $? -eq 1 ]; then
 fi
 
 echo ""
-echo "Compiling YouCompleteMe..."
-cd $HOME/.vim/plugged/YouCompleteMe
-python3 install.py --all
-
-if [ $? -eq 1 ]; then
-	echo ""
-	echo "Error during YCM compilation. Please install it manuanlly in $HOME/.vim/plugged/YouCompleteMe/install.py"
-        exit 1
-fi
-
-echo ""
 echo "VIM plugins installed!"
 
 # Reload configfiles 
