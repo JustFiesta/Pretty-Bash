@@ -36,7 +36,7 @@ fi
 echo ""
 echo "Unpacking zip file..."
 echo ""
-unzip main.zip
+unzip -o main.zip
 
 if [ $? -eq 1 ]; then
 	echo ""
