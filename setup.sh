@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 # -----------------
-# This script reqiures: git, wget, curl, and YouCompleteMe dependencies
-# If there is any problem with YCM install it via ~/.vim/plugged/YouCompleteMe/install.py
+# This script reqiures: git, zip, wget, curl and python3
 
-# Check for YCM dependencies
 echo ""
 echo "Installing dependencies"
-sudo apt-get install -y python3 cmake zip build-essential vim-nox python3-dev wget curl
+sudo apt-get install -y python3 zip python3-dev wget curl
 if [ $? -eq 1 ]; then
 	echo ""
 	echo "Dependencies not installed. Proceed manualy"
