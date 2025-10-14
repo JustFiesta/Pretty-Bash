@@ -59,3 +59,5 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[36m\]\W\[\e[m\]\[\e[32m\]\`parse_git_branch\`\[\e[m\] $ "
+
+alias k=kubectl
